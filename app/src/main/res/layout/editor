@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="758dp">
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="267dp"
+                    android:layout_marginBottom="500dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/Head"
+                    android:layout_width="69dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginBottom="592dp"
+                    android:text="修改头像"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginBottom="526dp"
+                    android:text="姓名："
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/mingzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="526dp"
+                    android:text="xxxx"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Name" />
+
+                <TextView
+                    android:id="@+id/xiugai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="142dp"
+                    android:text="修改名字"
+                    app:layout_constraintBottom_toBottomOf="@+id/mingzi"
+                    app:layout_constraintStart_toEndOf="@+id/mingzi" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别："
+                    app:layout_constraintStart_toStartOf="@+id/Name"
+                    tools:layout_editor_absoluteY="251dp" />
+
+                <TextView
+                    android:id="@+id/sex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男/女"
+                    app:layout_constraintBottom_toBottomOf="@+id/sex"
+                    tools:layout_editor_absoluteX="61dp" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄："
+                    app:layout_constraintStart_toStartOf="@+id/sex"
+                    tools:layout_editor_absoluteY="289dp" />
+
+                <TextView
+                    android:id="@+id/age2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxx"
+                    app:layout_constraintBottom_toBottomOf="@+id/age"
+                    tools:layout_editor_absoluteX="60dp" />
+
+                <TextView
+                    android:id="@+id/age1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改年龄"
+                    app:layout_constraintBottom_toBottomOf="@+id/age2"
+                    app:layout_constraintEnd_toEndOf="@+id/xiugai" />
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个性签名："
+                    app:layout_constraintStart_toStartOf="@+id/age"
+                    tools:layout_editor_absoluteY="357dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="347dp"
+                    android:layout_height="264dp"
+                    android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    app:layout_constraintStart_toStartOf="@+id/signature"
+                    tools:layout_editor_absoluteY="387dp" />
+
+                <ImageView
+                    android:id="@+id/fanhui"
+                    android:layout_width="36dp"
+                    android:layout_height="46dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/fanhi" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
