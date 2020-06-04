@@ -82,25 +82,28 @@
                     android:id="@+id/sex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
                     android:text="性别："
-                    app:layout_constraintStart_toStartOf="@+id/Name"
-                    tools:layout_editor_absoluteY="251dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/age"
+                    app:layout_constraintStart_toStartOf="@+id/Name" />
 
                 <TextView
                     android:id="@+id/sex1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
                     android:text="男/女"
                     app:layout_constraintBottom_toBottomOf="@+id/sex"
-                    tools:layout_editor_absoluteX="61dp" />
+                    app:layout_constraintStart_toEndOf="@+id/sex" />
 
                 <TextView
                     android:id="@+id/age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="49dp"
                     android:text="年龄："
-                    app:layout_constraintStart_toStartOf="@+id/sex"
-                    tools:layout_editor_absoluteY="289dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/signature"
+                    app:layout_constraintStart_toStartOf="@+id/sex" />
 
                 <TextView
                     android:id="@+id/age2"
@@ -108,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:text="xxx"
                     app:layout_constraintBottom_toBottomOf="@+id/age"
-                    tools:layout_editor_absoluteX="60dp" />
+                    app:layout_constraintStart_toEndOf="@+id/age" />
 
                 <TextView
                     android:id="@+id/age1"
@@ -122,22 +125,26 @@
                     android:id="@+id/signature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
                     android:text="个性签名："
-                    app:layout_constraintStart_toStartOf="@+id/age"
-                    tools:layout_editor_absoluteY="357dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="@+id/age" />
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="347dp"
                     android:layout_height="264dp"
+                    android:layout_marginBottom="107dp"
                     android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-                    app:layout_constraintStart_toStartOf="@+id/signature"
-                    tools:layout_editor_absoluteY="387dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/signature" />
 
                 <ImageView
                     android:id="@+id/fanhui"
                     android:layout_width="36dp"
                     android:layout_height="46dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/user"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/fanhi" />
 
