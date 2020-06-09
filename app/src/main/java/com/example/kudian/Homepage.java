@@ -17,8 +17,8 @@ public class Homepage extends AppCompatActivity {
         music1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,);
-                startActivity(i);
+                //Intent i = new Intent(Homepage.this,);
+                //startActivity(i);
             }
         });
 
@@ -26,8 +26,8 @@ public class Homepage extends AppCompatActivity {
         music2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,);
-                startActivity(i);
+                //Intent i = new Intent(Homepage.this,);
+               // startActivity(i);
             }
         });
 
@@ -40,23 +40,23 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
-        Button search = (Button) findViewById(R.id.);
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,);
-                startActivity(i);
+        //Button search = (Button) findViewById(R.id.);
+        //search.setOnClickListener(new View.OnClickListener() {
+           // @Override
+            //public void onClick(View v) {
+                //Intent i = new Intent(Homepage.this,);
+                //startActivity(i);
             }
-        });
+        //});
 
-        Button editor = (Button) findViewById(R.id.);
-        editor.setOnClickListener(new View.OnClickListener() {
-            @Override
+       // Button editor = (Button) findViewById(R.id.);
+       // editor.setOnClickListener(new View.OnClickListener() {
+           // @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,);
-                startActivity(i);
+                //Intent i = new Intent(Homepage.this,);
+                //startActivity(i);
             }
-        });
+        //});
 
     }
-}
+//}
