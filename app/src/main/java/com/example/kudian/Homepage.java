@@ -17,19 +17,12 @@ public class Homepage extends AppCompatActivity {
         music1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent i = new Intent(Homepage.this,);
-                //startActivity(i);
+                Intent i = new Intent(Homepage.this,LocalMusicAdapter.class);
+                startActivity(i);
             }
         });
 
-        Button music2 = (Button) findViewById(R.id.music2);
-        music2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent i = new Intent(Homepage.this,);
-               // startActivity(i);
-            }
-        });
+
 
         Button friend = (Button) findViewById(R.id.friend);
         friend.setOnClickListener(new View.OnClickListener() {
@@ -42,21 +35,21 @@ public class Homepage extends AppCompatActivity {
 
         //Button search = (Button) findViewById(R.id.);
         //search.setOnClickListener(new View.OnClickListener() {
-           // @Override
+            //@Override
             //public void onClick(View v) {
                 //Intent i = new Intent(Homepage.this,);
                 //startActivity(i);
-            }
+            //}
         //});
 
-       // Button editor = (Button) findViewById(R.id.);
-       // editor.setOnClickListener(new View.OnClickListener() {
-           // @Override
+        final Button editor = (Button) findViewById(R.id.editor);
+        editor.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                //Intent i = new Intent(Homepage.this,);
-                //startActivity(i);
+                Intent i = new Intent(Homepage.this,Editor.class);
+                startActivity(i);
             }
-        //});
+        });
 
     }
-//}
+}
