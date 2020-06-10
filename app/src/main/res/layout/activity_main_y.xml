@@ -66,6 +66,43 @@
             android:layout_marginRight="10dp"
             android:src="@mipmap/icon_last" />
     </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/local_music_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mian_tv"
+        android:layout_above="@+id/local_music_bottomlayout"
+        />
+    <LinearLayout
+        android:id="@+id/mian_tv"
+        android:orientation="horizontal"
+        android:layout_width="400dp"
+        android:layout_height="40dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mian_logic_tv"
+                android:gravity="right"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="100dp"
+                android:text="我的音乐"
+                android:textColor="@color/colorwhite"
+                android:textSize="30dp">
+            </TextView>
+            <TextView
+                android:id="@+id/mian_online_tv"
+                android:gravity="left"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="230dp"
+                android:text="在线音乐"
+                android:textColor="@color/colorwhite"
+                android:textSize="30dp">
+            </TextView>
 
+        </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>
