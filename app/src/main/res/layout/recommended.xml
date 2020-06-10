@@ -138,6 +138,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="55dp"
         android:layout_height="52dp"
         android:layout_marginStart="1dp"
@@ -153,5 +154,15 @@
             android:layout_marginBottom="9dp"
             app:srcCompat="@android:drawable/ic_menu_revert" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="27dp"
+        android:text="推荐音乐"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
