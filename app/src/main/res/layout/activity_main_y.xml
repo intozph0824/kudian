@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bj2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/local_music_bottomlayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon_song"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/a1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/local_music_bottom_iv_icon"/>
+        <TextView
+            android:id="@+id/local_music_bottom_tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/local_music_bottom_iv_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/local_music_bottom_tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:layout_below="@id/local_music_bottom_tv_song"
+            android:layout_alignLeft="@id/local_music_bottom_tv_song"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_next" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_play"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_next"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_play" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_last"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_play"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_last" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/local_music_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mian_tv"
+        android:layout_above="@+id/local_music_bottomlayout"
+        />
+    <LinearLayout
+        android:id="@+id/mian_tv"
+        android:orientation="horizontal"
+        android:layout_width="400dp"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mian_logic_tv"
+                android:gravity="right"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="100dp"
+                android:text="我的音乐"
+                android:textColor="@color/colorwhite"
+                android:textSize="30dp">
+            </TextView>
+            <TextView
+                android:id="@+id/mian_online_tv"
+                android:gravity="left"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="230dp"
+                android:text="在线音乐"
+                android:textColor="@color/colorwhite"
+                android:textSize="30dp">
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

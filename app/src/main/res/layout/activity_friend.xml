@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C69A9A"
-    tools:context=".Homepage">
+    tools:context=".HomepageActivity">
 
 
     <ScrollView
@@ -58,9 +58,9 @@
 
                 <Button
                     android:id="@+id/editor"
-                    android:layout_width="85dp"
-                    android:layout_height="33dp"
-                    android:layout_marginStart="200dp"
+                    android:layout_width="117dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="108dp"
                     android:text="编辑个人资料"
                     app:layout_constraintBottom_toBottomOf="@+id/age"
                     app:layout_constraintStart_toEndOf="@+id/age" />
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
-                    android:text="年龄"
+                    android:text="年龄：20"
                     app:layout_constraintBottom_toBottomOf="@+id/sex"
                     app:layout_constraintStart_toEndOf="@+id/sex" />
 
@@ -79,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="性别"
+                    android:text="性别:男"
                     app:layout_constraintEnd_toEndOf="@+id/name"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/name"
@@ -89,46 +89,38 @@
                     android:id="@+id/xname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="xxx"
+                    android:text="Bob"
                     app:layout_constraintBottom_toBottomOf="@+id/name"
                     app:layout_constraintStart_toEndOf="@+id/name" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="151dp"
+                    android:layout_height="197dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/account"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/touxinag" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="13dp"
                     android:text="姓名:"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/user" />
-
-                <ImageView
-                    android:id="@+id/user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="267dp"
-                    android:layout_marginBottom="500dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/account"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    app:layout_constraintTop_toBottomOf="@+id/account" />
 
                 <TextView
                     android:id="@+id/account"
                     android:layout_width="76dp"
                     android:layout_height="21dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="465dp"
                     android:text="账号信息："
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/user" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/friend1"
@@ -144,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1dp"
                     android:layout_marginBottom="243dp"
-                    android:text="xxx"
+                    android:text="Ben"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -154,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1dp"
                     android:layout_marginBottom="51dp"
-                    android:text="xxxxx"
+                    android:text="Jack"
                     app:layout_constraintBottom_toTopOf="@+id/textView4"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -173,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
                     android:layout_marginBottom="137dp"
-                    android:text="xxxxx"
+                    android:text="Tom"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_local_music_durtion" type="id" />
+    <item name="local_music_rv" type="id" />
+</resources>
