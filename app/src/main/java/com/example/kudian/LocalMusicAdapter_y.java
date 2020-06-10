@@ -68,7 +68,8 @@ class LocalMusicAdapter extends RecyclerView.Adapter<LocalMusicAdapter.LocalMuxi
             songTv = itemView.findViewById(R.id.item_local_music_song);
             singerTv = itemView.findViewById(R.id.item_local_music_singer);
             albumTv = itemView.findViewById(R.id.item_local_music_album);
-            timeTv = itemView.findViewById(R.id.item_local_music_durtion);
+            albumTv = itemView.findViewById(R.id.item_local_music_ddurtion);
+
         }
     }
 }

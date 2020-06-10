@@ -9,7 +9,7 @@
     app:contentPadding="10dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="1dp"
-    app:cardBackgroundColor="@color/colorpink">
+    app:cardBackgroundColor="@color/colorwhite">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -64,12 +64,12 @@
             android:singleLine="true"/>
 
         <TextView
-            android:id="@+id/item-local_music_durtion"
+            android:id="@+id/item_local_music_ddurtion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_local_music_singer"
             android:layout_alignParentRight="true"
-            android:text="4.30"
+            android:text=""
             android:textSize="16sp"
             android:textColor="#888"/>
 
