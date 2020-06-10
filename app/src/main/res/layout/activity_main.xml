@@ -87,9 +87,9 @@
 
                 <Button
                     android:id="@+id/editor"
-                    android:layout_width="85dp"
-                    android:layout_height="33dp"
-                    android:layout_marginStart="164dp"
+                    android:layout_width="113dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="124dp"
                     android:text="编辑个人资料"
                     app:layout_constraintBottom_toBottomOf="@+id/age"
                     app:layout_constraintStart_toEndOf="@+id/age" />
