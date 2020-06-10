@@ -13,11 +13,11 @@ public class Homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button music1 = (Button) findViewById(R.id.music1);
-        music1.setOnClickListener(new View.OnClickListener() {
+        Button music2 = (Button) findViewById(R.id.music2);
+        music2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,LocalMusicAdapter.class);
+                Intent i = new Intent(Homepage.this,MainActivity_y.class);
                 startActivity(i);
             }
         });
@@ -33,20 +33,29 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
-        //Button search = (Button) findViewById(R.id.);
+       //Button search = (Button) findViewById(R.id.);
         //search.setOnClickListener(new View.OnClickListener() {
-            //@Override
-            //public void onClick(View v) {
+           // @Override
+           // public void onClick(View v) {
                 //Intent i = new Intent(Homepage.this,);
-                //startActivity(i);
-            //}
-        //});
+               // startActivity(i);
+           // }
+       // });
 
-        final Button editor = (Button) findViewById(R.id.editor);
+        Button editor = (Button) findViewById(R.id.editor);
         editor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Homepage.this,Editor.class);
+                startActivity(i);
+            }
+        });
+
+        Button playlist = (Button) findViewById(R.id.playlist);
+        playlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Homepage.this,Recommended.class);
                 startActivity(i);
             }
         });
