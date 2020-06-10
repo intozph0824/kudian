@@ -15,7 +15,12 @@
 
         </activity>
         <activity android:name=".LoginActivity" />
+        <activity android:name=".FriendActivity" />
+        <activity android:name=".EditorActivity" />
+        <activity android:name=".RecommendedActivity" />
+        <activity android:name=".MainActivity_y_Activity" />
         <activity android:name=".WelcomeActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +28,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".Homepage">
+        <activity android:name=".HomepageActivity">
 
         </activity>
     </application>

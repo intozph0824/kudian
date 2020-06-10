@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.database.Cursor;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,13 +21,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class MainActivity_y extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity_y_Activity extends AppCompatActivity implements View.OnClickListener{
     ImageView nextIv,playIv,lastIv;
     TextView singerTv,songTv;
     RecyclerView musicRv;
     //数据源
-    List<LocalMusicBean_y>mDatas;
-    private LocalMusicAdapter adapter;
+    List<LocalMusicBean_y_Activity>mDatas;
+    private LocalMusicAdapterActivity adapter;
     private int position;
     //记录当前正在播放的音乐的位置
     int currnetPlayPosition = -1;
@@ -39,12 +37,12 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_y);
         initView();
         mediaPlayer =new MediaPlayer();
         mDatas = new ArrayList<>();
         //创建适配器对象
-        adapter = new LocalMusicAdapter(this, mDatas);
+        adapter = new LocalMusicAdapterActivity(this, mDatas);
         musicRv.setAdapter(adapter);
         //设置布局管理器
         LinearLayoutManager layoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
@@ -59,11 +57,11 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
 
     private void setEventListener() {
         /*设置每一项的点击事件*/
-        adapter.setOnItemClickListener(new LocalMusicAdapter.OnItemClickListener() {
+        adapter.setOnItemClickListener(new LocalMusicAdapterActivity.OnItemClickListener() {
             @Override
             public void OnItemClick(View view, int position) {
                 currnetPlayPosition = position;
-                LocalMusicBean_y musicBean =mDatas.get(position);
+                LocalMusicBean_y_Activity musicBean =mDatas.get(position);
                 /*根据传入对象播放音乐*/
                 //设置底部显示的歌手名和歌曲名
                 playMusicInMusicBean(musicBean);
@@ -71,7 +69,7 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
         });
     }
 
-    public void playMusicInMusicBean(LocalMusicBean_y musicBean) {
+    public void playMusicInMusicBean(LocalMusicBean_y_Activity musicBean) {
         singerTv.setText(musicBean.getSinger());
         songTv.setText(musicBean.getSong());
         stopMusic();
@@ -156,7 +154,7 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
             SimpleDateFormat sdf=new SimpleDateFormat("mm;ss");
             String time=sdf.format(new Date(duration));
             //将一行当中的数据封装到对象当中
-            LocalMusicBean_y bean=new LocalMusicBean_y(sid,song,singer,album,time,path);
+            LocalMusicBean_y_Activity bean=new LocalMusicBean_y_Activity(sid,song,singer,album,time,path);
             mDatas.add(bean);
         }
         //数据源变化，提示适配器更新
@@ -185,7 +183,7 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
                     return;
                 }
                 currnetPlayPosition =currnetPlayPosition-1;
-                LocalMusicBean_y lastBean=mDatas.get(currnetPlayPosition);
+                LocalMusicBean_y_Activity lastBean=mDatas.get(currnetPlayPosition);
                 playMusicInMusicBean(lastBean);
                 break;
             case R.id.local_music_bottom_iv_next:
@@ -194,7 +192,7 @@ public class MainActivity_y extends AppCompatActivity implements View.OnClickLis
                     return;
                 }
                 currnetPlayPosition =currnetPlayPosition+1;
-                LocalMusicBean_y nextBean=mDatas.get(currnetPlayPosition);
+                LocalMusicBean_y_Activity nextBean=mDatas.get(currnetPlayPosition);
                 playMusicInMusicBean(nextBean);
                 break;
             case R.id.local_music_bottom_iv_play:

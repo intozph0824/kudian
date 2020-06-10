@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                         String getpwd=cursor.getString(cursor.getColumnIndex("pwd"));
                         if(inputname.equalsIgnoreCase(getname)&&inputpwd.equalsIgnoreCase(getpwd)){
                             Toast.makeText(LoginActivity.this,"用户名和密码正确，欢迎登录！",Toast.LENGTH_SHORT).show();
-                            Intent intent=new Intent(LoginActivity.this,Homepage.class);
+                            Intent intent=new Intent(LoginActivity.this, HomepageActivity.class);
                             startActivity(intent);
                             finish();
                         }

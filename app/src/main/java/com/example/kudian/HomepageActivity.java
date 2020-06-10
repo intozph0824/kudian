@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Homepage extends AppCompatActivity {
+public class HomepageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class Homepage extends AppCompatActivity {
         music2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,MainActivity_y.class);
+                Intent i = new Intent(HomepageActivity.this,MainActivity_y_Activity.class);
                 startActivity(i);
             }
         });
@@ -28,7 +28,7 @@ public class Homepage extends AppCompatActivity {
         friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,Friend.class);
+                Intent i = new Intent(HomepageActivity.this, FriendActivity.class);
                 startActivity(i);
             }
         });
@@ -46,7 +46,7 @@ public class Homepage extends AppCompatActivity {
         editor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,Editor.class);
+                Intent i = new Intent(HomepageActivity.this, EditorActivity.class);
                 startActivity(i);
             }
         });
@@ -55,7 +55,7 @@ public class Homepage extends AppCompatActivity {
         playlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Homepage.this,Recommended.class);
+                Intent i = new Intent(HomepageActivity.this, RecommendedActivity.class);
                 startActivity(i);
             }
         });

@@ -12,9 +12,9 @@ import android.content.Context;
 
         import java.util.List;
 
-class LocalMusicAdapter extends RecyclerView.Adapter<LocalMusicAdapter.LocalMuxicViewHolder> {
+class LocalMusicAdapterActivity extends RecyclerView.Adapter<LocalMusicAdapterActivity.LocalMuxicViewHolder> {
     Context context;
-    List<LocalMusicBean_y> mDatas;
+    List<LocalMusicBean_y_Activity> mDatas;
 
     OnItemClickListener onItemClickListener;
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
@@ -24,7 +24,7 @@ class LocalMusicAdapter extends RecyclerView.Adapter<LocalMusicAdapter.LocalMuxi
         public void OnItemClick(View view,int position);
     }
 
-    public LocalMusicAdapter(Context context, List<LocalMusicBean_y> mDatas) {
+    public LocalMusicAdapterActivity(Context context, List<LocalMusicBean_y_Activity> mDatas) {
         this.context = context;
         this.mDatas = mDatas;
     }
@@ -32,14 +32,14 @@ class LocalMusicAdapter extends RecyclerView.Adapter<LocalMusicAdapter.LocalMuxi
     @NonNull
     @Override
     public LocalMuxicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_local_music,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.activity_item_local_music,parent,false);
         LocalMuxicViewHolder holder = new LocalMuxicViewHolder(view);
         return holder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull LocalMuxicViewHolder holder, final int position) {
-        LocalMusicBean_y musicBean_y=mDatas.get(position);
+        LocalMusicBean_y_Activity musicBean_y=mDatas.get(position);
         holder.idTv.setText(musicBean_y.getId());
         holder.songTv.setText(musicBean_y.getSong());
         holder.singerTv.setText(musicBean_y.getSinger());
