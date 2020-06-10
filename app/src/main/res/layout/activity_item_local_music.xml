@@ -63,15 +63,7 @@
             android:ellipsize="end"
             android:singleLine="true"/>
 
-        <TextView
-            android:id="@+id/item_local_music_ddurtion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/item_local_music_singer"
-            android:layout_alignParentRight="true"
-            android:text=""
-            android:textSize="16sp"
-            android:textColor="#888"/>
+
 
     </RelativeLayout>
 
