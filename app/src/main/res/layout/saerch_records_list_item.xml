@@ -18,22 +18,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/custom_gray"/>
+            android:background="@color/colorAccent"/>
 
         <TextView
-            android:background="@color/white"
+            android:background="@color/colorAccent"
             android:id="@+id/clear_all_records_tv"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="16sp"
             android:gravity="center"
-            android:textColor="@color/clear_red"
+            android:textColor="@color/colorWhite"
             android:text="清除历史记录"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/custom_gray"/>
+            android:background="@color/colorAccent"/>
 
     </LinearLayout>
 </LinearLayout>
