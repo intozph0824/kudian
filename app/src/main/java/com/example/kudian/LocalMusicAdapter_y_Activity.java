@@ -44,7 +44,7 @@ class LocalMusicAdapterActivity extends RecyclerView.Adapter<LocalMusicAdapterAc
         holder.songTv.setText(musicBean_y.getSong());
         holder.singerTv.setText(musicBean_y.getSinger());
         holder.albumTv.setText(musicBean_y.getAlbum());
-        holder.timeTv.setText(musicBean_y.getDuration());
+
 
         holder.itemView.setOnClickListener(new View.OnClickListener(){
             @Override

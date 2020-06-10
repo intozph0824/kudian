@@ -1,10 +1,12 @@
 package com.example.kudian;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ContentResolver;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -34,10 +36,12 @@ public class MainActivity_y_Activity extends AppCompatActivity implements View.O
     //记录暂停音乐时进度条位置
     int currentPausePositionInSong = 0;
     MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_y);
+
         initView();
         mediaPlayer =new MediaPlayer();
         mDatas = new ArrayList<>();
@@ -54,6 +58,8 @@ public class MainActivity_y_Activity extends AppCompatActivity implements View.O
         setEventListener();
 
     }
+
+
 
     private void setEventListener() {
         /*设置每一项的点击事件*/
