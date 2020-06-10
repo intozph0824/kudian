@@ -32,8 +32,6 @@ public class RegisterActivity extends AppCompatActivity {
         btnCancel();
     }
 
-
-
     //4 绑定控件--代码
     private void initView() {
         et_name=findViewById(R.id.rename);
