@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomepageActivity extends AppCompatActivity {
@@ -13,8 +15,8 @@ public class HomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button music2 = (Button) findViewById(R.id.music2);
-        music2.setOnClickListener(new View.OnClickListener() {
+        Button mymusic = (Button) findViewById(R.id.mymusic);
+        mymusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomepageActivity.this,MainActivity_y_Activity.class);
@@ -33,14 +35,14 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
-       //Button search = (Button) findViewById(R.id.);
-        //search.setOnClickListener(new View.OnClickListener() {
-           // @Override
-           // public void onClick(View v) {
-                //Intent i = new Intent(Homepage.this,);
-               // startActivity(i);
-           // }
-       // });
+        ImageView search =  findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomepageActivity.this, SearchActivity.class);
+                startActivity(i);
+            }
+        });
 
         Button editor = (Button) findViewById(R.id.editor);
         editor.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +53,8 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
-        Button playlist = (Button) findViewById(R.id.playlist);
-        playlist.setOnClickListener(new View.OnClickListener() {
+        Button recommended = (Button) findViewById(R.id.recommended);
+        recommended.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomepageActivity.this, RecommendedActivity.class);

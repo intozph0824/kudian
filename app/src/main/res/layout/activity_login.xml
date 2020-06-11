@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="93dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/touxiang" />
+        app:srcCompat="@drawable/touxiang1" />
 
     <LinearLayout
         android:layout_width="match_parent"

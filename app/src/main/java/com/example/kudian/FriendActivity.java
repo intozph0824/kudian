@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class FriendActivity extends HomepageActivity {
 
@@ -26,6 +27,15 @@ public class FriendActivity extends HomepageActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(FriendActivity.this, HomepageActivity.class);
+                startActivity(i);
+            }
+        });
+
+        ImageView search =  findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(FriendActivity.this, SearchActivity.class);
                 startActivity(i);
             }
         });
