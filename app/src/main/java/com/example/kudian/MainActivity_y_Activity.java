@@ -36,11 +36,16 @@ public class MainActivity_y_Activity extends AppCompatActivity implements View.O
     //记录暂停音乐时进度条位置
     int currentPausePositionInSong = 0;
     MediaPlayer mediaPlayer;
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            "android.permission.READ_EXTERNAL_STORAGE",
+            "android.permission.WRITE_EXTERNAL_STORAGE" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_y);
+        verifyStoraPermissions(this);
 
         initView();
         mediaPlayer =new MediaPlayer();
@@ -59,6 +64,19 @@ public class MainActivity_y_Activity extends AppCompatActivity implements View.O
 
     }
 
+    public static void verifyStoraPermissions(MainActivity_y_Activity mainActivity_y_activity) {
+        try{
+            //检测是否有写的权限
+            int permission = ActivityCompat.checkSelfPermission(mainActivity_y_activity,"android.permission.WRITE_EXTERNAL_STORAGE");
+            if (permission != PackageManager.PERMISSION_GRANTED) {
+                // 没有写的权限，去申请写的权限，会弹出对话框
+                ActivityCompat.requestPermissions(mainActivity_y_activity,PERMISSIONS_STORAGE,REQUEST_EXTERNAL_STORAGE);
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
 
     private void setEventListener() {
